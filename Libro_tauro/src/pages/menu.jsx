@@ -1,5 +1,6 @@
 import { IoSearchSharp } from "react-icons/io5";
 import Descados from "../components/utils/Destacados";
+import LibroDes from "../components/utils/LibroDes";
 export function Menu() {
 
     const Librolista= [
@@ -60,6 +61,9 @@ export function Menu() {
         </div>
       </section>
 
+        <section>
+            <LibroDes/>
+        </section>
 
       <section>
         <Descados/>
