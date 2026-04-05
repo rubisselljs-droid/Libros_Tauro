@@ -27,13 +27,13 @@ export default function LibroD({ imagen, titulo, autor }) {
 
   return (
     <div
-      className="w-65 p-5 rounded-2xl transition-all duration-300"
+      className="w-full sm:w-56 md:w-64 lg:w-72 p-4 md:p-5 rounded-xl md:rounded-2xl transition-all duration-300"
       style={{
         background: `linear-gradient(180deg, ${bgColor} 0%, #0f0f0f 100%)`,
       }}
     >
       {/* Imagen */}
-      <div className="rounded-xl overflow-hidden shadow-2xl transform transition duration-300 hover:scale-105">
+      <div className="rounded-lg md:rounded-xl overflow-hidden shadow-lg md:shadow-2xl transform transition duration-300 hover:scale-105">
         <img
           ref={imgRef}
           src={imagen}
@@ -44,11 +44,11 @@ export default function LibroD({ imagen, titulo, autor }) {
       </div>
 
       {/* Texto */}
-      <div className="mt-4 text-white">
-        <h2 className="text-sm font-semibold leading-tight">
+      <div className="mt-3 md:mt-4 text-white">
+        <h2 className="text-xs md:text-sm font-semibold leading-tight line-clamp-2">
           {titulo}
         </h2>
-        <p className="text-xs text-white/70 mt-1">
+        <p className="text-xs text-white/70 mt-1 line-clamp-1">
           {autor}
         </p>
       </div>
