@@ -12,45 +12,25 @@ export default function Descados() {
     {
       id: 2,
       imagen:
-        "https://i.pinimg.com/1200x/4d/5e/f9/4d5ef94f9a038da39c34db143e5b98e0.jpg",
-      genero: "Ficción Clásica",
-      icono: "Ficcion",
+        "https://i.pinimg.com/736x/68/60/6d/68606db6503e5a8530d003e26cd3e09e.jpg",
+      genero: "ciencia",
+      icono: "ciencia",
     },
     {
       id: 3,
       imagen:
-        "https://i.pinimg.com/1200x/4d/5e/f9/4d5ef94f9a038da39c34db143e5b98e0.jpg",
+        "https://i.pinimg.com/736x/7f/36/17/7f3617280d63fb0918d05476238d2537.jpg",
       genero: "Ficción Clásica",
       icono: "Ficcion",
     },
     {
       id: 4,
       imagen:
-        "https://i.pinimg.com/1200x/4d/5e/f9/4d5ef94f9a038da39c34db143e5b98e0.jpg",
+        "https://i.pinimg.com/1200x/c2/38/da/c238dabd236c2da8a69de5fff02ad454.jpg",
       genero: "Ficción Clásica",
       icono: "Ficcion",
     },
-    {
-      id: 5,
-      imagen:
-        "https://i.pinimg.com/1200x/4d/5e/f9/4d5ef94f9a038da39c34db143e5b98e0.jpg",
-      genero: "Ficción Clásica",
-      icono: "Ficcion",
-    },
-    {
-      id: 6,
-      imagen:
-        "https://i.pinimg.com/1200x/4d/5e/f9/4d5ef94f9a038da39c34db143e5b98e0.jpg",
-      genero: "Ficción Clásica",
-      icono: "Ficcion",
-    },
-    {
-      id: 7,
-      imagen:
-        "https://i.pinimg.com/1200x/4d/5e/f9/4d5ef94f9a038da39c34db143e5b98e0.jpg",
-      genero: "Ficción Clásica",
-      icono: "Ficcion",
-    },
+    
   ];
   return (
     <section className="w-full bg-[#0d1117] py-12 md:py-16 lg:py-20 px-4 md:px-6">

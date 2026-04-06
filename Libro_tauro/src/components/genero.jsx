@@ -28,7 +28,7 @@ export default function Genero({ imagen, icono, genero }) {
   };
 
   return (
-    <div className="relative w-full sm:w-56 md:w-64 lg:w-72 aspect-[4/5] rounded-2xl sm:rounded-3xl lg:rounded-4xl overflow-hidden group cursor-pointer shadow-lg lg:shadow-2xl transition-transform duration-300 hover:scale-105">
+    <div className="relative w-full sm:w-56 md:w-64 lg:w-72 aspect-4/5 rounded-2xl sm:rounded-3xl lg:rounded-4xl overflow-hidden group cursor-pointer shadow-lg lg:shadow-2xl transition-transform duration-300 hover:scale-105">
       <div className="absolute inset-0">
         <img
           src={imagen}
