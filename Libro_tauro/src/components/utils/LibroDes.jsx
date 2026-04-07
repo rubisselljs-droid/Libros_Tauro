@@ -17,11 +17,18 @@ export default function LibroDes() {
       autor: "george r.r martin",
     },
      {
-      id: 2,
+      id: 3,
       imagen: imagen2,
       titulo: "Fire & blood",
       autor: "george r.r martin",
     },
+     {
+      id: 4,
+      imagen: imagen2,
+      titulo: "Fire & blood",
+      autor: "george r.r martin",
+    }, 
+
   ];
 
   return (

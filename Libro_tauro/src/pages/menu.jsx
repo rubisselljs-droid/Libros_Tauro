@@ -71,6 +71,46 @@ export function Menu() {
       <section className="bg-[#090c11] py-12 px-4 sm:px-6 lg:px-8">
         <Descados />
       </section>
+
+      {/** Sección de boletín mensual con diseño igual al de la imagen */}
+      <section className="bg-[#04080d] py-16 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl overflow-hidden rounded-[36px] bg-linear-to-r from-[#56e3cc] via-[#2bb2a1] to-[#0f7a81] shadow-[0_35px_90px_-45px_rgba(15,47,60,0.8)]">
+          <div className="relative px-8 py-10 sm:px-12 sm:py-14">
+            <div className="absolute right-8 top-8 flex items-center gap-2">
+              <span className="relative inline-flex h-4 w-4">
+                <span className="absolute left-1/2 top-0 h-1 w-1 rounded-full bg-white/70 -translate-x-1/2"></span>
+                <span className="absolute left-1/2 top-1/2 h-1 w-1 rounded-full bg-white/70 -translate-x-1/2 -translate-y-1/2 rotate-45"></span>
+              </span>
+              <span className="relative inline-flex h-3 w-3">
+                <span className="absolute left-1/2 top-0 h-1 w-1 rounded-full bg-white/60 -translate-x-1/2"></span>
+                <span className="absolute left-0 top-1/2 h-1 w-1 rounded-full bg-white/60 -translate-y-1/2"></span>
+              </span>
+              <span className="block h-2 w-2 rounded-full bg-white/30"></span>
+            </div>
+
+            <div className="space-y-5 text-left text-black sm:max-w-3xl">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                Cura tu bandeja de entrada con nuestro boletín mensual.
+              </h2>
+              <p className="text-sm text-slate-100/90 sm:text-base">
+                Novedades, selecciones del editor y ensayos literarios entregados una vez al mes.
+              </p>
+              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center">
+                <label htmlFor="newsletter-email" className="sr-only"> <strong>Correo electrónico</strong></label>
+                <input
+                  id="newsletter-email"
+                  type="email"
+                  placeholder="curador@ejemplo.com"
+                  className="w-full rounded-full border border-white/20 bg-white/10 px-5 py-4 text-sm text-white placeholder:text-slate-200 outline-none transition focus:border-white/40 focus:ring-2 focus:ring-white/20 sm:text-base"
+                />
+                <button className="inline-flex shrink-0 rounded-full bg-white px-8 py-4 text-sm font-semibold text-slate-950 transition hover:bg-slate-100 sm:text-base">
+                  Únete al Club
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
