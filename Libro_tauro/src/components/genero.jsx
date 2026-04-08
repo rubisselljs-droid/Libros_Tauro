@@ -1,7 +1,11 @@
 import { MdOutlineMenuBook } from "react-icons/md";
 import { GiMaterialsScience } from "react-icons/gi";
 import { MdHistoryEdu } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+
 export default function Genero({ imagen, icono, genero }) {
+  const navigate = useNavigate();
+
   const IconoTomado = () => {
     switch (icono) {
       case "Ficcion":
@@ -27,8 +31,15 @@ export default function Genero({ imagen, icono, genero }) {
     }
   };
 
+  const irGenero = () => {
+    navigate(`/genero/${genero.toLowerCase()}`);
+  };
+
   return (
-    <div className="relative w-full sm:w-56 md:w-64 lg:w-72 aspect-4/5 rounded-2xl sm:rounded-3xl lg:rounded-4xl overflow-hidden group cursor-pointer shadow-lg lg:shadow-2xl transition-transform duration-300 hover:scale-105">
+    <div
+      onClick={irGenero}
+      className="relative w-full sm:w-56 md:w-64 lg:w-72 aspect-4/5 rounded-2xl sm:rounded-3xl lg:rounded-4xl overflow-hidden group cursor-pointer shadow-lg lg:shadow-2xl transition-transform duration-300 hover:scale-105"
+    >
       <div className="absolute inset-0">
         <img
           src={imagen}

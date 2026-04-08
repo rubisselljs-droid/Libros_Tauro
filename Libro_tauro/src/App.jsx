@@ -5,6 +5,7 @@ import Blog from './pages/blog'
 import Catalogo from './pages/catalogo'
 import Foro from './pages/foro'
 import Contacto from './pages/contacto'
+import Categoria from './pages/categoria'
 import './App.css'
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           <Route path="/catalogo" element={<Catalogo />} />
           <Route path="/foro" element={<Foro />} />
           <Route path="/contacto" element={<Contacto />} />
+
+          {/* RUTA NUEVA PARA CATEGORÍAS */}
+          <Route path="/categoria/:nombre" element={<Categoria />} />
         </Routes>
       </main>
     </Router>
